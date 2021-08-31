@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/scratches/scratch.kts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.kts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/scratches/scratch_20.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/scratches/scratch_21.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/scratches/scratch_22.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/scratches/scratch_23.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/scratches/scratch_24.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/scratches/scratch_25.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/scratches/scratch_26.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/generated/source/navigation-args/debug/com/android/dayplanner/app/ui/home/HomeFragmentDirections.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/generated/source/navigation-args/debug/com/android/dayplanner/app/ui/home/HomeFragmentDirections.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/android/dayplanner/app/data/Task.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/android/dayplanner/app/ui/tasks/TasksViewModel.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/Extensions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/data/Task.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/data/TaskDAO.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/data/TaskDao.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/data/TaskDatabase.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/data/TaskService.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/data/Taskao.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/data/TasksRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/Extensions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/MyViewModelFactory.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/detail/HomeViewModelFactory.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/detail/TaskDetailsFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/detail/TaskDetailsViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/detail/TaskFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/detail/TaskViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/detail/TaskViewModelFactory.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/home/EasyList.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/home/HomeFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/home/HomeViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/home/HomeViewModelFactory.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/home/HomeViewModelFactory.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/home/ItemTouchHelper.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/home/MyViewModelFactory.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/home/TaskRenderer.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/home/TasksRenderer.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/splash/SplashFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/splash/SplashViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/tasks/TaskViewModelFactory.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/tasks/TasksFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/tasks/TasksViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/dayplanner/app/ui/tasks/TasksViewModelFactory.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/drawable/splash_logo_background_circle.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/home_fragment.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/item_task.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/splash_fragment.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/task_details_fragment.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/task_fragment.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/tasks_fragment.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/tasks_list_placeholder.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/menu/history.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/themes.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/android/dayplanner/app/data/TasksRepositoryTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/android/dayplanner/app/ui/home/HomeViewModelTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/android/dayplanner/app/ui/home/MainCoroutineRule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/android/dayplanner/app/ui/home/TestCoroutineRule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../callsign-android-app/configuration.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../callsign-android-app/sdk/src/main/java/com/callsign/arocontroller/authentication/model/AuthenticatorChallengeData.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../callsign-android-app/sdk/src/main/java/com/callsign/sdk/authentication/domain/usecase/wait/WaitRequirementDetails.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../callsign-android-app/sdk/src/main/java/com/callsign/sdk/authentication/ui/wait/WaitFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../callsign-android-app/sdk/src/main/java/com/callsign/sdk/common/data/network/security/ServiceDiscoveryProvider.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../callsign-android-app/testapp/src/main/java/testapp/data/repository/CallsignWrapper.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

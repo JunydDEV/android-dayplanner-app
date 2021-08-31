@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">android-dayplanner-app</string>
+    <string name="hello">Hello</string>
+    <string name="app_logo">app logo</string>
+    <string name="today_s_tasks">Today tasks</string>
+    <string name="see_all">See All</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_date">Date</string>
+    <string name="save">Save</string>
+    <string name="generate_long_dummy_values">Generate Long Dummy Task</string>
+    <string name="generate_short_dummy_values">Generate Short Dummy Task</string>
+    <string name="dummy_brief_task_title">Do before starting work 😊 </string>
+    <string name="dummy_brief_task_description">\n
+
+        ✅ Check your emails.\n\n
+
+        ✅ Check your meetings on calender.\n\n
+
+        ✅ Read some articles.\n\n
+
+        ✅ Review merge requests list.\n\n
+
+        ✅ Prepare notes for daily standup.\n\n
+
+    </string>
+
+    <string name="dummy_short_task_title">Do after finishing work 😎 </string>
+    <string name="dummy_short_task_description">\n
+
+        ✍️ Git commit code and push\n
+
+        ✍️ Create MR on gitlab.\n
+
+        🎤 Post MR in channel.\n
+
+    </string>
+    <string name="no_tasks">No tasks</string>
+    <string name="edit">Edit</string>
+
+</resources>
