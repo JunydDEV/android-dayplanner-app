@@ -26,6 +26,7 @@ class TasksRepositoryTest{
     fun `addTask returns insertion success message when task task valid`() {
         val validTask =
             Task(id = "1234", "task title", "task description", status = Status.COMPLETED)
+
         sut.addTask(validTask) { message ->
             assertNotNull(message)
             assertEquals("Task inserted successfully", message)

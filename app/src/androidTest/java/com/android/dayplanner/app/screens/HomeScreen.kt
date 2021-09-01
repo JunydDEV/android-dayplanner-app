@@ -16,6 +16,12 @@ class HomeScreen: Screen<HomeScreen>() {
 
     private val floatingActionButton = KButton { withId(R.id.floating_action_button) }
 
+    private val recyclerView: KRecyclerView = KRecyclerView({
+        withId(R.id.recyclerView)
+    }, itemTypeBuilder = {
+        itemType(::TaskItem)
+    })
+
     class TaskItem(parent: Matcher<View>) : KRecyclerItem<TaskItem>(parent) {
         val title = KTextView(parent) { withId(R.id.textView_title) }
         val description = KTextView(parent) { withId(R.id.textView_description) }
@@ -23,11 +29,17 @@ class HomeScreen: Screen<HomeScreen>() {
         val completeTaskButton = KCheckBox(parent) {withId(R.id.checkBox)}
     }
 
-    private val recyclerView: KRecyclerView = KRecyclerView({
-        withId(R.id.recyclerView)
-    }, itemTypeBuilder = {
-        itemType(::TaskItem)
-    })
+    fun performClickOnFAButton(){
+        floatingActionButton.click()
+    }
 
+    fun deleteTaskFromList() {
+        recyclerView {
+            firstChild<TaskItem> {
+                deleteTaskButton.click()
+            }
+        }
+
+    }
 
 }

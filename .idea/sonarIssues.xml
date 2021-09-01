@@ -93,6 +93,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/androidTest/java/com/android/dayplanner/app/TaskPlannerTests.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/androidTest/java/com/android/dayplanner/app/TestHomeScreen.kt">
           <value>
             <set />
