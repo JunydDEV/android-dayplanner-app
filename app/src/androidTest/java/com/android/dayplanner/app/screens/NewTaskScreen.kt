@@ -14,9 +14,13 @@ class NewTaskScreen: Screen<NewTaskScreen>() {
     private val editTextDescription = KEditText{ withId(R.id.editText_description) }
     private val editTextDate = KEditText{ withId(R.id.editText_taskDate) }
 
-
     fun saveHappyTask(){
         buttonCreateTask.click()
+
+        editTextTitle.hasAnyText()
+        editTextDescription.hasAnyText()
+        editTextDate.hasAnyText()
+
         buttonSaveTask.click()
     }
 
@@ -24,14 +28,20 @@ class NewTaskScreen: Screen<NewTaskScreen>() {
         buttonCreateTask.click()
 
         editTextTitle.replaceText("")
+        editTextDescription.hasAnyText()
+        editTextDate.hasAnyText()
+
+        Espresso.closeSoftKeyboard()
 
         buttonSaveTask.click()
     }
 
     fun updateTaskDetails() {
-        buttonCreateTask.click()
-
         editTextTitle.replaceText("Task Title")
+
+        editTextTitle.hasAnyText()
+        editTextDescription.hasAnyText()
+        editTextDate.hasAnyText()
 
         Espresso.closeSoftKeyboard()
 

@@ -4,6 +4,8 @@ import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.IdlingRegistry
 import com.android.dayplanner.app.ui.MainActivity
 import com.android.dayplanner.app.ui.resourceidling.SimpleIdlingResource
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.runBlocking
 import org.junit.After
 import org.junit.Before
 
@@ -25,9 +27,13 @@ open class BaseUIClass {
     }
 
     @After
-    open fun unregisterIdlingResource() {
+    open fun tearDown() {
         resourceIdling?.let {
             IdlingRegistry.getInstance().unregister(SimpleIdlingResource)
+        }
+
+        runBlocking {
+            delay(3000)
         }
     }
 }

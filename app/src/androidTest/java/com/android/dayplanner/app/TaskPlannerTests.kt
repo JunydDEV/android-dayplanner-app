@@ -39,7 +39,7 @@ class TaskPlannerTests: BaseUIClass() {
     @Test
     fun updateTask(){
         onScreen<HomeScreen> {
-            performClickOnFAButton()
+            clickOnTask()
         }
 
         onScreen<NewTaskScreen> {
