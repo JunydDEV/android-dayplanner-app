@@ -5,6 +5,7 @@ import com.agoda.kakao.edit.KEditText
 import com.agoda.kakao.screen.Screen
 import com.agoda.kakao.text.KButton
 import com.android.dayplanner.app.R
+import com.android.dayplanner.app.TaskPlannerTests
 
 class NewTaskScreen: Screen<NewTaskScreen>() {
 
@@ -17,6 +18,7 @@ class NewTaskScreen: Screen<NewTaskScreen>() {
     fun saveHappyTask(){
         buttonCreateTask.click()
 
+        editTextTitle.replaceText(TaskPlannerTests.newTaskTitle)
         editTextTitle.hasAnyText()
         editTextDescription.hasAnyText()
         editTextDate.hasAnyText()
@@ -37,7 +39,7 @@ class NewTaskScreen: Screen<NewTaskScreen>() {
     }
 
     fun updateTaskDetails() {
-        editTextTitle.replaceText("Task Title")
+        editTextTitle.replaceText(TaskPlannerTests.updateTaskTitle)
 
         editTextTitle.hasAnyText()
         editTextDescription.hasAnyText()

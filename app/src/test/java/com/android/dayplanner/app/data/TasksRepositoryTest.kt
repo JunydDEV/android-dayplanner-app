@@ -23,7 +23,7 @@ class TasksRepositoryTest{
     }
 
     @Test
-    fun `addTask returns insertion success message when task task valid`() {
+    fun `addTask returns insertion success message when task is valid`() {
         val validTask =
             Task(id = "1234", "task title", "task description", status = Status.COMPLETED)
 
@@ -34,7 +34,7 @@ class TasksRepositoryTest{
     }
 
     @Test
-    fun `addTask returns invalid task message when title is empty`() {
+    fun `addTask returns validation error message when task is invalid`() {
         val validTask =
             Task(id = "1234", "", "task description", status = Status.COMPLETED)
 
@@ -45,7 +45,7 @@ class TasksRepositoryTest{
     }
 
     @Test
-    fun `getPendingTasks returns empty list when list doesn't contain pending task`() {
+    fun `getPendingTasks returns empty list when list doesn't contain pending tasks`() {
         Mockito.`when`(taskDatabase.taskDao().getTasks()).thenReturn(emptyPendingTaskList())
 
         val list = sut.getPendingTasks()

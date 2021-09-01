@@ -16,6 +16,11 @@ class TaskPlannerTests: BaseUIClass() {
         onScreen<NewTaskScreen> {
             saveHappyTask()
         }
+
+        onScreen<HomeScreen> {
+            assertRecyclerView(newTaskTitle)
+        }
+
     }
 
     @Test
@@ -45,8 +50,15 @@ class TaskPlannerTests: BaseUIClass() {
         onScreen<NewTaskScreen> {
             updateTaskDetails()
         }
+
+        onScreen<HomeScreen> {
+            assertRecyclerView(updateTaskTitle)
+        }
     }
 
-
+    companion object {
+        val newTaskTitle = "New Task Title"
+        val updateTaskTitle = "Update Task Title"
+    }
 
 }

@@ -9,6 +9,7 @@ import com.agoda.kakao.screen.Screen
 import com.agoda.kakao.text.KButton
 import com.agoda.kakao.text.KTextView
 import com.android.dayplanner.app.R
+import com.android.dayplanner.app.TaskPlannerTests
 import org.hamcrest.Matcher
 
 
@@ -28,6 +29,14 @@ class HomeScreen: Screen<HomeScreen>() {
         val date = KTextView(parent) { withId(R.id.textView_date) }
         val deleteTaskButton = KImageView(parent) {withId(R.id.imageView_delete)}
         val completeTaskButton = KCheckBox(parent) {withId(R.id.checkBox)}
+    }
+
+    fun assertRecyclerView(text:String){
+        recyclerView {
+            firstChild<TaskItem> {
+                title.hasText(text)
+            }
+        }
     }
 
     fun performClickOnFAButton(){

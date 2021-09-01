@@ -2,14 +2,6 @@ package com.android.dayplanner.app.data
 
 class TasksRepository(var db: TaskDatabase) {
 
-    fun getAllTasks(): List<Task> {
-        return db.taskDao().getTasks()
-    }
-
-    fun getPendingTasks(): List<Task> {
-        return db.taskDao().getTasks().filter { it.status == Status.PENDING }
-    }
-
     fun addTask(task: Task, onComplete: (String) -> Unit) {
         task.performValidation { isValid, message ->
             if (isValid) {
@@ -19,6 +11,14 @@ class TasksRepository(var db: TaskDatabase) {
                 onComplete.invoke(message)
             }
         }
+    }
+
+    fun getAllTasks(): List<Task> {
+        return db.taskDao().getTasks().reversed()
+    }
+
+    fun getPendingTasks(): List<Task> {
+        return db.taskDao().getTasks().filter { it.status == Status.PENDING }.reversed()
     }
 
     fun removeTask(task: Task, onComplete: (String) -> Unit) {
