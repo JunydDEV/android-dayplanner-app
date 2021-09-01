@@ -18,8 +18,6 @@ import com.android.dayplanner.app.ui.MainActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.pedrogomez.renderers.RVRendererAdapter
 import com.pedrogomez.renderers.RendererBuilder
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.async
 
 
 class HomeFragment : Fragment(R.layout.home_fragment) {

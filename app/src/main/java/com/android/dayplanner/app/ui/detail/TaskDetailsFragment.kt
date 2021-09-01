@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.findNavController
 import com.android.dayplanner.app.R
 import com.android.dayplanner.app.data.Task
 import com.android.dayplanner.app.ui.MainActivity
@@ -50,10 +51,12 @@ class TaskDetailsFragment : Fragment(R.layout.task_details_fragment) {
                 if (arguments != null) {
                     viewModel.updateTask(getUpdateTask()!!) {
                         Toast.makeText(requireContext(), it, Toast.LENGTH_SHORT).show()
+                        findNavController().popBackStack()
                     }
                 } else {
                     viewModel.saveTask(createTask()) {
                         Toast.makeText(requireContext(), it, Toast.LENGTH_SHORT).show()
+                        findNavController().popBackStack()
                     }
                 }
             }
