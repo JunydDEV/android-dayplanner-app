@@ -29,5 +29,5 @@ I need you to contribute this project. Simply create PR for any improvements or 
 
 # Future Work
 - I will be adding DataStore new Android library.
-- I will be replace the KAPT with KSP.
-- I will do more code refactoring.
+- I will be replacing the KAPT with KSP.
+- I will be doing more code refactoring.
