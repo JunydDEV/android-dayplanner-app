@@ -25,7 +25,7 @@ class TasksRepositoryTest{
     @Test
     fun `addTask returns insertion success message when task is valid`() {
         val validTask =
-            Task(id = "1234", "task title", "task description", status = Status.COMPLETED)
+            Task(id = "1234", "task title", "task description", status = Status.PENDING)
 
         sut.addTask(validTask) { message ->
             assertNotNull(message)
@@ -35,10 +35,10 @@ class TasksRepositoryTest{
 
     @Test
     fun `addTask returns validation error message when task is invalid`() {
-        val validTask =
-            Task(id = "1234", "", "task description", status = Status.COMPLETED)
+        val invalidTask =
+            Task(id = "1234", "", "task description", status = Status.PENDING)
 
-        sut.addTask(validTask) { message ->
+        sut.addTask(invalidTask) { message ->
             assertNotNull(message)
             assertEquals("Title is empty", message)
         }

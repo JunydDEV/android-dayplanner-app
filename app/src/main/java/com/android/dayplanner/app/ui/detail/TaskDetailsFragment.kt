@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
@@ -43,6 +44,11 @@ class TaskDetailsFragment : Fragment(R.layout.task_details_fragment) {
                 view.findViewById<Button>(R.id.button_saveTask).run {
                     text = context.getString(R.string.edit)
                 }
+
+                view.findViewById<Toolbar>(R.id.toolbar).run {
+                    title = "Edit Task"
+                }
+
             }
         }
 

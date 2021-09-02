@@ -11,12 +11,12 @@ import kotlinx.coroutines.launch
 class SplashViewModel : ViewModel() {
 
     fun doInitialization(onInitializationComplete: (Boolean) -> Unit) {
-        //SimpleIdlingResource.setIdleState(false)
+        SimpleIdlingResource.setIdleState(false)
         viewModelScope.launch {
             delay(3000)
             onInitializationComplete.invoke(true)
 
-            //SimpleIdlingResource.setIdleState(true)
+            SimpleIdlingResource.setIdleState(true)
         }
     }
 }
