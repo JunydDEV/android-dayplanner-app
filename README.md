@@ -25,7 +25,7 @@ I have used following features of Kotlin in this project.
 <p> ✅ Delegates </p>
 
 # Need you to contribute
-I need you to contribute this project. Simply create PR for any improvements or fixes and we will merge it after the review process.
+I need you to contribute to this project. Simply create PR for any improvements or fixes and we will merge it after the review process.
 
 # Future Work
 - I will be adding DataStore new Android library.
