@@ -31,3 +31,6 @@ I need you to contribute to this project. Simply create PR for any improvements 
 - I will be adding DataStore new Android library.
 - I will be replacing the KAPT with KSP.
 - I will be doing more code refactoring.
+
+# Android Studio Version
+Please note that you will need to have Android studio version 4.2+ to run this app. As we are using minimumSdk and targetSdk 31 which is not supported below than 4.2 version.
