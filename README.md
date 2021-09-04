@@ -3,12 +3,19 @@ Day Planner helps user to create tasks for daily routine work. It will be showin
 I use this app as a playground for all the new stuff I learn and implement. 
 
 ![alt text](https://github.com/JunydDEV/android-dayplanner-app/blob/develop/app/Project%20Header.png)
+![alt text](https://github.com/JunydDEV/android-dayplanner-app/blob/develop/android12_splash_screen.png)
+
 
 # Android Stack 
 I have used MVVM architecture in this project along with following Android Jetpack Components.
 <p> ✅ Navigation Components </p>
 <p> ✅ Room Data Persistence </p>
 <p> ✅ LiveData and ViewModel </p>
+
+# Android 12 
+This app contains following Android 12 improvemetns and changes.
+<p> ✅ Splash API </p>
+
 
 # Testing Frameworks
 I have used following Android UI and Unit testing frameworks in this project.
@@ -32,5 +39,14 @@ I need you to contribute to this project. Simply create PR for any improvements 
 - I will be replacing the KAPT with KSP.
 - I will be doing more code refactoring.
 
-# Android Studio Version
-Please note that you will need to have Android studio version 4.2+ to run this app. As we are using minimumSdk and targetSdk 31 which is not supported below than 4.2 version.
+# Pre Requisites
+- Android Studio version 4.2 or above (I use Bumble Bee preview version)
+- compileSdkVersion, targetSdkVersion version 31 
+- buildToolsVersion 30.0.3
+- Java version 11
+- Android Gradle version 7.0.2
+- Kotlin version 1.5.30
+
+
+
+
