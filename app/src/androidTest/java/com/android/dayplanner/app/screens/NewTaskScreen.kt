@@ -38,7 +38,7 @@ class NewTaskScreen: Screen<NewTaskScreen>() {
         buttonSaveTask.click()
     }
 
-    fun updateTaskDetails() {
+    fun updateTaskWithValidDetails() {
         editTextTitle.replaceText(TaskPlannerTests.updateTaskTitle)
 
         editTextTitle.hasAnyText()
@@ -50,4 +50,15 @@ class NewTaskScreen: Screen<NewTaskScreen>() {
         buttonSaveTask.click()
     }
 
+
+    fun updateTaskWithInvalidDetails() {
+        editTextTitle.replaceText("")
+
+        editTextDescription.hasAnyText()
+        editTextDate.hasAnyText()
+
+        Espresso.closeSoftKeyboard()
+
+        buttonSaveTask.click()
+    }
 }

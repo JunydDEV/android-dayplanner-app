@@ -13,7 +13,7 @@ import com.android.dayplanner.app.TaskPlannerTests
 import org.hamcrest.Matcher
 
 
-class HomeScreen: Screen<HomeScreen>() {
+class HomeScreen : Screen<HomeScreen>() {
 
     private val floatingActionButton = KButton { withId(R.id.floating_action_button) }
 
@@ -27,11 +27,11 @@ class HomeScreen: Screen<HomeScreen>() {
         val title = KTextView(parent) { withId(R.id.textView_title) }
         val description = KTextView(parent) { withId(R.id.textView_description) }
         val date = KTextView(parent) { withId(R.id.textView_date) }
-        val deleteTaskButton = KImageView(parent) {withId(R.id.imageView_delete)}
-        val completeTaskButton = KCheckBox(parent) {withId(R.id.checkBox)}
+        val deleteTaskButton = KImageView(parent) { withId(R.id.imageView_delete) }
+        val completeTaskButton = KCheckBox(parent) { withId(R.id.checkBox) }
     }
 
-    fun assertRecyclerView(text:String){
+    fun assertRecyclerView(text: String) {
         recyclerView {
             firstChild<TaskItem> {
                 title.hasText(text)
@@ -39,7 +39,7 @@ class HomeScreen: Screen<HomeScreen>() {
         }
     }
 
-    fun performClickOnFAButton(){
+    fun performClickOnFAButton() {
         recyclerView.isVisible()
         floatingActionButton.isVisible()
 
@@ -59,8 +59,8 @@ class HomeScreen: Screen<HomeScreen>() {
         }
     }
 
-    fun clickOnTask(){
-        recyclerView{
+    fun clickOnTask() {
+        recyclerView {
             firstChild<TaskItem> {
                 title.isVisible()
                 description.isVisible()
@@ -73,4 +73,7 @@ class HomeScreen: Screen<HomeScreen>() {
         }
     }
 
+    fun tasksListIsEmpty(): Boolean {
+        return recyclerView.getSize() == 0
+    }
 }

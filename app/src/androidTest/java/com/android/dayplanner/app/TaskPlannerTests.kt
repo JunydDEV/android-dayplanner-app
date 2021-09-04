@@ -5,60 +5,83 @@ import com.android.dayplanner.app.screens.HomeScreen
 import com.android.dayplanner.app.screens.NewTaskScreen
 import org.junit.Test
 
-class TaskPlannerTests: BaseUIClass() {
+class TaskPlannerTests : BaseUIClass() {
 
     @Test
-    fun insertNewTaskHappyPath(){
+    fun insertNewTaskHappyPath() {
         onScreen<HomeScreen> {
             performClickOnFAButton()
         }
-
         onScreen<NewTaskScreen> {
             saveHappyTask()
         }
-
         onScreen<HomeScreen> {
             assertRecyclerView(newTaskTitle)
         }
-
     }
 
     @Test
-    fun insertNewTaskUnHappyPath(){
+    fun insertNewTaskUnHappyPath() {
         onScreen<HomeScreen> {
             performClickOnFAButton()
         }
-
         onScreen<NewTaskScreen> {
             saveUnhappyTask()
         }
     }
 
     @Test
-    fun deleteTask(){
+    fun deleteTask() {
         onScreen<HomeScreen> {
             deleteTaskFromList()
         }
     }
 
     @Test
-    fun updateTask(){
+    fun updateTaskHappyPath() {
         onScreen<HomeScreen> {
+            if (tasksListIsEmpty()) {
+                performClickOnFAButton()
+                onScreen<NewTaskScreen> {
+                    saveHappyTask()
+                }
+                onScreen<HomeScreen> {
+                    assertRecyclerView(newTaskTitle)
+                }
+            }
             clickOnTask()
+            onScreen<NewTaskScreen> {
+                updateTaskWithValidDetails()
+            }
+            onScreen<HomeScreen> {
+                assertRecyclerView(updateTaskTitle)
+            }
         }
+    }
 
-        onScreen<NewTaskScreen> {
-            updateTaskDetails()
-        }
-
+    @Test
+    fun updateTaskUnHappyPath() {
         onScreen<HomeScreen> {
-            assertRecyclerView(updateTaskTitle)
+            if (tasksListIsEmpty()) {
+                performClickOnFAButton()
+                onScreen<NewTaskScreen> {
+                    saveHappyTask()
+                }
+                onScreen<HomeScreen> {
+                    assertRecyclerView(newTaskTitle)
+                }
+            }
+            clickOnTask()
+            onScreen<NewTaskScreen> {
+                updateTaskWithInvalidDetails()
+            }
         }
     }
 
     companion object {
-        val newTaskTitle = "New Task Title"
-        val updateTaskTitle = "Update Task Title"
+        const val newTaskTitle = "New Task Title"
+        const val updateTaskTitle = "Update Task Title"
     }
 
 }
+
