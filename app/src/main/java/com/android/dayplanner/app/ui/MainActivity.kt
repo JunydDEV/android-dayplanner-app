@@ -30,15 +30,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setSplashExitAnimation(splashScreen: SplashScreen) {
-       // SimpleIdlingResource.setIdleState(false)
         splashScreen.setOnExitAnimationListener { splashScreenView ->
             configureObjectAnimator(splashScreenView) { slideUpAnimation ->
                 with(slideUpAnimation) {
                     interpolator = AnticipateInterpolator()
-                    duration = 3000L
+                    duration = 500L
                     doOnEnd {
                         splashScreenView.remove()
-                      //  SimpleIdlingResource.setIdleState(true)
                     }
                     start()
                 }
