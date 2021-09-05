@@ -30,6 +30,8 @@ I have used following features of Kotlin in this project.
 <p> ✅ Coroutines </p>
 <p> ✅ Scope Functions </p>
 <p> ✅ Delegates </p>
+<p> ✅ Gradle Kotlin DSL </p>
+
 
 # Need you to contribute
 I need you to contribute to this project. Simply create PR for any improvements or fixes and we will merge it after the review process.
