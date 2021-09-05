@@ -13,7 +13,7 @@ I have used MVVM architecture in this project along with following Android Jetpa
 
 # Android 12 
 This app contains following Android 12 improvemetns and changes.
-<p> ✅ Splash API </p>
+<p> ✅ Splash API <a href="https://hashnode.com/post/splash-screen-migration-to-android-12-ckt64qj4o08qe95s1fmx2c81n" target="_blank">[Migration guide]</a></p>
 
 
 # Testing Frameworks
