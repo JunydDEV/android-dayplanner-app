@@ -3,7 +3,6 @@ Day Planner helps user to create tasks for daily routine work. It will be showin
 I use this app as a playground for all the new stuff I learn and implement. 
 
 ![alt text](https://github.com/JunydDEV/android-dayplanner-app/blob/develop/images/Project%20Header.png)
-![alt text](https://github.com/JunydDEV/android-dayplanner-app/blob/develop/images/android12_splash_screen.png)
 
 
 # Android Stack 
