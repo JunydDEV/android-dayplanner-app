@@ -11,6 +11,9 @@ I have used MVVM architecture in this project along with following Android Jetpa
 <p> ✅ Room Data Persistence </p>
 <p> ✅ LiveData and ViewModel </p>
 
+# Views
+<p> ✅ Views Binding </p>
+
 # Android 12 
 This app contains following Android 12 improvemetns and changes.
 <p> ✅ Splash API <a href="https://hashnode.com/post/splash-screen-migration-to-android-12-ckt64qj4o08qe95s1fmx2c81n" target="_blank">[Migration guide]</a></p>
@@ -35,10 +38,11 @@ I have used following features of Kotlin in this project.
 # Need you to contribute
 I need you to contribute to this project. Simply create PR for any improvements or fixes and we will merge it after the review process.
 
-# Future Work
-- I will be adding DataStore new Android library.
-- I will be replacing the KAPT with KSP.
-- I will be doing more code refactoring.
+# ToDo 
+- Implement DataStore for sharedpreferences
+- Replace KAPT with KSP
+- Implement two-way databinding
+- Implement dark theme
 
 # Pre Requisites
 - Android Studio version 4.2 or above (I use Bumble Bee preview version)
