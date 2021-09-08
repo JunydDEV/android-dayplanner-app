@@ -37,5 +37,6 @@
     </string>
     <string name="no_tasks">No tasks</string>
     <string name="edit">Edit</string>
+    <string name="button_edit_task">Edit Task</string>
 
 </resources>
