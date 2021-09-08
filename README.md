@@ -3,7 +3,6 @@ Day Planner helps user to create tasks for daily routine work. It will be showin
 I use this app as a playground for all the new stuff I learn and implement. 
 
 ![alt text](https://github.com/JunydDEV/android-dayplanner-app/blob/develop/images/Project%20Header.png)
-![alt text](https://github.com/JunydDEV/android-dayplanner-app/blob/develop/images/android12_splash_screen.png)
 
 
 # Android Stack 
@@ -14,7 +13,7 @@ I have used MVVM architecture in this project along with following Android Jetpa
 
 # Android 12 
 This app contains following Android 12 improvemetns and changes.
-<p> ✅ Splash API </p>
+<p> ✅ Splash API <a href="https://hashnode.com/post/splash-screen-migration-to-android-12-ckt64qj4o08qe95s1fmx2c81n" target="_blank">[Migration guide]</a></p>
 
 
 # Testing Frameworks
@@ -30,6 +29,8 @@ I have used following features of Kotlin in this project.
 <p> ✅ Coroutines </p>
 <p> ✅ Scope Functions </p>
 <p> ✅ Delegates </p>
+<p> ✅ Gradle Kotlin DSL </p>
+
 
 # Need you to contribute
 I need you to contribute to this project. Simply create PR for any improvements or fixes and we will merge it after the review process.
