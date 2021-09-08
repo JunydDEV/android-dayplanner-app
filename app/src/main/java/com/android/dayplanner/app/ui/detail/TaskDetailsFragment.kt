@@ -20,7 +20,7 @@ import com.android.dayplanner.app.databinding.TaskDetailsFragmentBinding
 import com.android.dayplanner.app.ui.MainActivity
 import java.util.*
 
-class TaskDetailsFragment : Fragment(R.layout.task_details_fragment) {
+class TaskDetailsFragment : Fragment() {
 
     private lateinit var mainActivity: MainActivity
     private lateinit var binding: TaskDetailsFragmentBinding
@@ -63,6 +63,7 @@ class TaskDetailsFragment : Fragment(R.layout.task_details_fragment) {
             }
         }
 
+        //binding invoking
         binding.buttonSaveTask.apply {
             setOnClickListener {
                 if (arguments != null) {
@@ -78,7 +79,6 @@ class TaskDetailsFragment : Fragment(R.layout.task_details_fragment) {
                 }
             }
         }
-
         binding.buttonCreateLongTempTask.apply {
             setOnClickListener {
                 binding.editTextTitle.apply {
@@ -92,7 +92,6 @@ class TaskDetailsFragment : Fragment(R.layout.task_details_fragment) {
                 }
             }
         }
-
         binding.buttonCreateShortTempTask.apply {
             setOnClickListener {
                 binding.editTextTitle.apply {

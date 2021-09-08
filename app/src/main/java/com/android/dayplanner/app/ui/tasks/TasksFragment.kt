@@ -11,6 +11,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.core.widget.doAfterTextChanged
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -18,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.android.dayplanner.app.R
 import com.android.dayplanner.app.addAll
 import com.android.dayplanner.app.data.Task
+import com.android.dayplanner.app.databinding.TasksFragmentBinding
 import com.android.dayplanner.app.ui.MainActivity
 import com.android.dayplanner.app.ui.detail.TaskDetailsViewModel
 import com.android.dayplanner.app.ui.detail.TaskViewModelFactory
@@ -26,12 +28,15 @@ import com.android.dayplanner.app.ui.home.TasksRenderer
 import com.pedrogomez.renderers.RVRendererAdapter
 import com.pedrogomez.renderers.RendererBuilder
 
-class TasksFragment : Fragment(R.layout.tasks_fragment) {
+class TasksFragment : Fragment() {
 
     private lateinit var mainActivity: MainActivity
+    private lateinit var binding: TasksFragmentBinding
+
     private val viewModel by viewModels<TasksViewModel> {
         TasksViewModelFactory(mainActivity.getDatabaseInstance())
     }
+
     private val tasksList by lazy { mutableListOf<Task>() }
     private val rendererBuilder by lazy {
         RendererBuilder(TasksRenderer { view, task ->
@@ -45,21 +50,27 @@ class TasksFragment : Fragment(R.layout.tasks_fragment) {
         mainActivity = context as MainActivity
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        binding = DataBindingUtil.inflate(inflater, R.layout.tasks_fragment,container,false)
 
-        view.findViewById<RecyclerView>(R.id.recyclerView).run {
+        //binding invoking
+        binding.recyclerView.apply {
             layoutManager = LinearLayoutManager(requireContext())
             adapter = tasksAdapter
         }
 
+        //viewmodel invoking
         viewModel.loadTasks()
-
-        viewModel.tasksListLiveData.observe(viewLifecycleOwner, { list ->
+        viewModel.tasksListLiveData.observe(viewLifecycleOwner) { list ->
             tasksList.addAll(trashExistingItems = true, list)
             tasksAdapter.notifyDataSetChanged()
-        })
+        }
 
+        return super.onCreateView(inflater, container, savedInstanceState)
     }
 
     private fun registerTaskViewsClickListeners(view: View, task: Task) {

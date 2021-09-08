@@ -6,6 +6,8 @@
         <entry key="app/src/main/res/drawable/logo.xml" value="0.125" />
         <entry key="app/src/main/res/drawable/splash_logo_background_circle.xml" value="0.335" />
         <entry key="app/src/main/res/layout/home_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/task_details_fragment.xml" value="0.2068785825951016" />
+        <entry key="app/src/main/res/layout/tasks_fragment.xml" value="0.2759259259259259" />
       </map>
     </option>
   </component>
