@@ -10,8 +10,6 @@ I have used MVVM architecture in this project along with following Android Jetpa
 <p> ✅ Navigation Components </p>
 <p> ✅ Room Data Persistence </p>
 <p> ✅ LiveData and ViewModel </p>
-
-# Views
 <p> ✅ Views Binding </p>
 
 # Android 12 
