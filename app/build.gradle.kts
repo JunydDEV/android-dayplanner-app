@@ -75,6 +75,6 @@ dependencies {
     implementation("androidx.test.espresso:espresso-idling-resource:3.4.0")
     implementation("androidx.core:core-splashscreen:1.0.0-alpha01")
 
-    api("com.agoda.kakao:kakao:2.1.0")
+    androidTestImplementation("io.github.kakaocup:kakao:3.0.4")
 
 }
