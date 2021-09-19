@@ -1,6 +1,7 @@
 package com.android.dayplanner.app.ui.home
 
 import android.annotation.SuppressLint
+import android.app.AlertDialog
 import android.content.Context
 import android.os.Bundle
 import android.view.*
@@ -118,10 +119,34 @@ class HomeFragment : Fragment() {
 
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.showHistory) {
-            findNavController().navigate(R.id.action_homeFragment_to_tasksFragment)
+        when (item.itemId) {
+            R.id.showHistory -> {
+                findNavController().navigate(R.id.action_homeFragment_to_tasksFragment)
+            }
+            else -> {
+                if (tasksList.isNotEmpty()) {
+                    askForConfirmation {
+                        viewModel.deleteAllTasks { message ->
+                            Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                } else {
+                    Toast.makeText(requireContext(), "No tasks available", Toast.LENGTH_SHORT)
+                        .show()
+                }
+            }
         }
         return true
+    }
+
+    private fun askForConfirmation(onConfirm: () -> Unit) {
+        AlertDialog.Builder(requireActivity())
+            .setTitle("Delete All Confirmation")
+            .setMessage("Are you sure to delete all pending tasks?")
+            .setPositiveButton("Yes") { _, _ -> onConfirm.invoke() }
+            .setNegativeButton("No") { dialog, _ -> dialog.dismiss() }
+            .create()
+            .show()
     }
 
 }

@@ -48,4 +48,14 @@ class HomeViewModel(private val taskDatabase: TaskDatabase) : ViewModel() {
         }
     }
 
+    fun deleteAllTasks(onDelete: (String) -> Unit) {
+        viewModelScope.launch {
+            tasksRepository.deletePendingTasks{ message ->
+                tasksList.clear()
+                tasksListLiveData.value = tasksList
+                onDelete.invoke(message)
+            }
+        }
+    }
+
 }

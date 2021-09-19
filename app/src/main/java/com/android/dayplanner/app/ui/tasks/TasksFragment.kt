@@ -70,7 +70,7 @@ class TasksFragment : Fragment() {
             tasksAdapter.notifyDataSetChanged()
         }
 
-        return super.onCreateView(inflater, container, savedInstanceState)
+        return binding.root
     }
 
     private fun registerTaskViewsClickListeners(view: View, task: Task) {

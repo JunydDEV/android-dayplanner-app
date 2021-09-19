@@ -46,4 +46,13 @@ class TasksRepository(var db: TaskDatabase) {
         }
         onComplete.invoke(message)
     }
+
+    fun deletePendingTasks(onDelete: (String) -> Unit) {
+        val deletedTasksCount = db.taskDao().deleteTaskByStatus(Status.PENDING)
+        if ( deletedTasksCount > 0){
+            onDelete.invoke("$deletedTasksCount task(s) deleted.")
+        } else {
+            onDelete.invoke("there are no tasks to be deleted.")
+        }
+    }
 }
