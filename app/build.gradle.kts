@@ -7,13 +7,13 @@ plugins {
 }
 
 android {
-    compileSdkVersion(31)
-    buildToolsVersion("30.0.3")
+    compileSdk = 31
+    buildToolsVersion = "30.0.3"
 
     defaultConfig {
         applicationId = "com.android.dayplanner.app"
-        minSdkVersion(21)
-        targetSdkVersion(31)
+        minSdk = 21
+        targetSdk = 31
         versionCode = 1
         versionName = "1.0"
 
@@ -44,10 +44,10 @@ android {
 }
 
 dependencies {
-    val room_version = "2.3.0"
-    val kotlin_version = "1.5.30"
+    val roomVersion = "2.3.0"
+    val kotlinVersion = "1.5.30"
 
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:$$kotlin_version")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion")
     implementation("androidx.core:core-ktx:1.6.0")
     implementation("androidx.appcompat:appcompat:1.3.1")
     implementation("com.google.android.material:material:1.4.0")
@@ -60,8 +60,8 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0")
     implementation("com.github.pedrovgs:renderers:4.1.0")
 
-    implementation("androidx.room:room-ktx:$room_version")
-    kapt("androidx.room:room-compiler:$room_version")
+    implementation("androidx.room:room-ktx:$roomVersion")
+    kapt("androidx.room:room-compiler:$roomVersion")
 
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.mockito:mockito-core:3.11.2")
