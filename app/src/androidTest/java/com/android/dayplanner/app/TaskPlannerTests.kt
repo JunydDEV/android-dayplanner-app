@@ -1,8 +1,8 @@
 package com.android.dayplanner.app
 
-import com.agoda.kakao.screen.Screen.Companion.onScreen
 import com.android.dayplanner.app.screens.HomeScreen
 import com.android.dayplanner.app.screens.NewTaskScreen
+import io.github.kakaocup.kakao.screen.Screen.Companion.onScreen
 import org.junit.Test
 
 class TaskPlannerTests : BaseUIClass() {

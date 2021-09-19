@@ -1,15 +1,14 @@
 package com.android.dayplanner.app.screens
 
 import android.view.View
-import com.agoda.kakao.check.KCheckBox
-import com.agoda.kakao.image.KImageView
-import com.agoda.kakao.recycler.KRecyclerItem
-import com.agoda.kakao.recycler.KRecyclerView
-import com.agoda.kakao.screen.Screen
-import com.agoda.kakao.text.KButton
-import com.agoda.kakao.text.KTextView
 import com.android.dayplanner.app.R
-import com.android.dayplanner.app.TaskPlannerTests
+import io.github.kakaocup.kakao.check.KCheckBox
+import io.github.kakaocup.kakao.image.KImageView
+import io.github.kakaocup.kakao.recycler.KRecyclerItem
+import io.github.kakaocup.kakao.recycler.KRecyclerView
+import io.github.kakaocup.kakao.screen.Screen
+import io.github.kakaocup.kakao.text.KButton
+import io.github.kakaocup.kakao.text.KTextView
 import org.hamcrest.Matcher
 
 

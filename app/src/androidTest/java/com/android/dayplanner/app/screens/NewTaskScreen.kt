@@ -1,11 +1,11 @@
 package com.android.dayplanner.app.screens
 
 import androidx.test.espresso.Espresso
-import com.agoda.kakao.edit.KEditText
-import com.agoda.kakao.screen.Screen
-import com.agoda.kakao.text.KButton
 import com.android.dayplanner.app.R
 import com.android.dayplanner.app.TaskPlannerTests
+import io.github.kakaocup.kakao.edit.KEditText
+import io.github.kakaocup.kakao.screen.Screen
+import io.github.kakaocup.kakao.text.KButton
 
 class NewTaskScreen: Screen<NewTaskScreen>() {
 
