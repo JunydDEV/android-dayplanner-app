@@ -1,5 +1,6 @@
 package com.android.dayplanner.app
 
+import androidx.test.espresso.Espresso.openContextualActionModeOverflowMenu
 import com.android.dayplanner.app.screens.HomeScreen
 import com.android.dayplanner.app.screens.NewTaskScreen
 import io.github.kakaocup.kakao.screen.Screen.Companion.onScreen
@@ -41,13 +42,7 @@ class TaskPlannerTests : BaseUIClass() {
     fun updateTaskHappyPath() {
         onScreen<HomeScreen> {
             if (tasksListIsEmpty()) {
-                performClickOnFAButton()
-                onScreen<NewTaskScreen> {
-                    saveHappyTask()
-                }
-                onScreen<HomeScreen> {
-                    assertRecyclerView(newTaskTitle)
-                }
+                createNewTask()
             }
             clickOnTask()
             onScreen<NewTaskScreen> {
@@ -75,6 +70,32 @@ class TaskPlannerTests : BaseUIClass() {
             onScreen<NewTaskScreen> {
                 updateTaskWithInvalidDetails()
             }
+        }
+    }
+
+    @Test
+    fun testToolbar(){
+        onScreen<HomeScreen> {
+            assertToolbar()
+            if(tasksListIsEmpty()) {
+                createNewTask()
+            }
+        }
+
+        openContextualActionModeOverflowMenu()
+
+        onScreen<HomeScreen> {
+            deleteAllTasks()
+        }
+    }
+
+    private fun HomeScreen.createNewTask() {
+        performClickOnFAButton()
+        onScreen<NewTaskScreen> {
+            saveHappyTask()
+        }
+        onScreen<HomeScreen> {
+            assertRecyclerView(newTaskTitle)
         }
     }
 

@@ -3,20 +3,29 @@ package com.android.dayplanner.app.screens
 import android.view.View
 import com.android.dayplanner.app.R
 import io.github.kakaocup.kakao.check.KCheckBox
+import io.github.kakaocup.kakao.common.views.KView
 import io.github.kakaocup.kakao.image.KImageView
 import io.github.kakaocup.kakao.recycler.KRecyclerItem
 import io.github.kakaocup.kakao.recycler.KRecyclerView
 import io.github.kakaocup.kakao.screen.Screen
 import io.github.kakaocup.kakao.text.KButton
 import io.github.kakaocup.kakao.text.KTextView
+import io.github.kakaocup.kakao.toolbar.KToolbar
 import org.hamcrest.Matcher
 
 
 class HomeScreen : Screen<HomeScreen>() {
 
     private val floatingActionButton = KButton { withId(R.id.floating_action_button) }
+    private val toolbar = KToolbar { withId(R.id.toolbar) }
+    private val deleteAllView = KView { withText(R.string.label_delete_all) }
 
-    private val recyclerView: KRecyclerView = KRecyclerView({
+    private val yesView = KView { withText(R.string.yes) }
+    private val noView = KView { withText(R.string.no) }
+    private val deleteAllTitle = KView { withText(R.string.delete_all_title) }
+    private val deleteAllDescription = KView { withText(R.string.delete_all_description) }
+
+    private val recyclerView = KRecyclerView({
         withId(R.id.recyclerView)
     }, itemTypeBuilder = {
         itemType(::TaskItem)
@@ -74,5 +83,27 @@ class HomeScreen : Screen<HomeScreen>() {
 
     fun tasksListIsEmpty(): Boolean {
         return recyclerView.getSize() == 0
+    }
+
+    fun assertToolbar() {
+        toolbar.isDisplayed()
+    }
+
+    fun deleteAllTasks(){
+        deleteAllView.click()
+
+        assertConfirmationDialog()
+        yesView.click()
+
+        recyclerView {
+            hasSize(0)
+        }
+    }
+
+    private fun assertConfirmationDialog() {
+        deleteAllTitle.isDisplayed()
+        deleteAllDescription.isDisplayed()
+        yesView.isDisplayed()
+        noView.isDisplayed()
     }
 }

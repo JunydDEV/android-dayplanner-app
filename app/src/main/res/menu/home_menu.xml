@@ -5,6 +5,7 @@
 
     <item app:showAsAction="collapseActionView"
         android:id="@+id/showHistory" android:title="@string/label_history"/>
+
     <item app:showAsAction="collapseActionView"
         android:id="@+id/deleteAll" android:title="@string/label_delete_all"/>
 

@@ -113,7 +113,7 @@ class HomeFragment : Fragment() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.history, menu)
+        inflater.inflate(R.menu.home_menu, menu)
         super.onCreateOptionsMenu(menu, inflater)
     }
 
@@ -141,10 +141,10 @@ class HomeFragment : Fragment() {
 
     private fun askForConfirmation(onConfirm: () -> Unit) {
         AlertDialog.Builder(requireActivity())
-            .setTitle("Delete All Confirmation")
-            .setMessage("Are you sure to delete all pending tasks?")
-            .setPositiveButton("Yes") { _, _ -> onConfirm.invoke() }
-            .setNegativeButton("No") { dialog, _ -> dialog.dismiss() }
+            .setTitle(getString(R.string.delete_all_title))
+            .setMessage(getString(R.string.delete_all_description))
+            .setPositiveButton(getString(R.string.yes)) { _, _ -> onConfirm.invoke() }
+            .setNegativeButton(getString(R.string.no)) { dialog, _ -> dialog.dismiss() }
             .create()
             .show()
     }
