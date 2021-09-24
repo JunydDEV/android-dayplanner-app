@@ -85,18 +85,15 @@ class HomeScreen : Screen<HomeScreen>() {
         return recyclerView.getSize() == 0
     }
 
-    //asserts home screen toolbar
     fun assertToolbar() {
         toolbar.isDisplayed()
     }
 
-    //show confirmation dialog
     fun showConfirmationDialog() {
         deleteAllView.click()
         assertConfirmationDialog()
     }
 
-    //click on yes or no to delete all tasks.
     fun confirmDeleteAllTask(confirmOption: ConfirmOption){
         if (confirmOption == ConfirmOption.YES) {
             yesView.perform {
@@ -109,14 +106,12 @@ class HomeScreen : Screen<HomeScreen>() {
         }
     }
 
-    //asserts tasks list is empty or not after delete all.
     fun assertTasksListEmptiness(){
         recyclerView {
             hasSize(0)
         }
     }
 
-    //assert confirmation dialog is visibility properly.
     private fun assertConfirmationDialog() {
         deleteAllTitle.isDisplayed()
         deleteAllDescription.isDisplayed()
