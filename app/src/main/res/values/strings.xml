@@ -38,8 +38,8 @@
     <string name="no_tasks">No tasks</string>
     <string name="edit">Edit</string>
     <string name="button_edit_task">Edit Task</string>
-    <string name="label_history">History</string>
-    <string name="label_delete_all">Delete All</string>
+    <string name="label_history">Show Tasks History</string>
+    <string name="label_delete_all">Delete All Tasks</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="delete_all_title">Delete All Confirmation</string>

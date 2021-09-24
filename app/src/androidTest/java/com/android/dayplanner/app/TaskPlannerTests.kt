@@ -42,6 +42,7 @@ class TaskPlannerTests : BaseUIClass() {
     fun updateTaskHappyPath() {
         onScreen<HomeScreen> {
             if (tasksListIsEmpty()) {
+                performClickOnFAButton()
                 createNewTask()
             }
             clickOnTask()
@@ -74,10 +75,11 @@ class TaskPlannerTests : BaseUIClass() {
     }
 
     @Test
-    fun testToolbar(){
+    fun testDeleteAllTasks(){
         onScreen<HomeScreen> {
             assertToolbar()
             if(tasksListIsEmpty()) {
+                performClickOnFAButton()
                 createNewTask()
             }
         }
@@ -85,12 +87,13 @@ class TaskPlannerTests : BaseUIClass() {
         openContextualActionModeOverflowMenu()
 
         onScreen<HomeScreen> {
-            deleteAllTasks()
+            showConfirmationDialog()
+            confirmDeleteAllTask(HomeScreen.ConfirmOption.YES)
+            assertTasksListEmptiness()
         }
     }
 
-    private fun HomeScreen.createNewTask() {
-        performClickOnFAButton()
+    private fun createNewTask() {
         onScreen<NewTaskScreen> {
             saveHappyTask()
         }

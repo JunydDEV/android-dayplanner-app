@@ -4,9 +4,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item app:showAsAction="collapseActionView"
-        android:id="@+id/showHistory" android:title="@string/label_history"/>
+        android:id="@+id/deleteAll" android:title="@string/label_delete_all"/>
 
     <item app:showAsAction="collapseActionView"
-        android:id="@+id/deleteAll" android:title="@string/label_delete_all"/>
+        android:id="@+id/showHistory" android:title="@string/label_history"/>
+
 
 </menu>
